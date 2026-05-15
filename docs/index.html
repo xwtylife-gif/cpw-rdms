@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CPW-RDMS 静态测试页</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: #172026;
+      background: #f5f7f3;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 32px;
+    }
+    main {
+      width: min(920px, 100%);
+      background: #ffffff;
+      border: 1px solid #d8e2d0;
+      border-radius: 8px;
+      box-shadow: 0 18px 50px rgba(26, 49, 39, 0.12);
+      overflow: hidden;
+    }
+    header {
+      padding: 40px 44px 24px;
+      border-bottom: 1px solid #e5eadf;
+      background: linear-gradient(135deg, #eef6e9 0%, #ffffff 68%);
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 5vw, 52px);
+      line-height: 1.05;
+      font-weight: 760;
+      letter-spacing: 0;
+    }
+    .tagline {
+      margin: 14px 0 0;
+      max-width: 680px;
+      color: #4c5b52;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    section {
+      padding: 30px 44px 42px;
+      display: grid;
+      gap: 18px;
+    }
+    .status {
+      display: inline-flex;
+      align-items: center;
+      width: fit-content;
+      gap: 10px;
+      padding: 9px 13px;
+      border-radius: 999px;
+      background: #e8f5e5;
+      color: #1f6b3a;
+      font-weight: 650;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #27a844;
+      box-shadow: 0 0 0 5px rgba(39, 168, 68, 0.16);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .tile {
+      border: 1px solid #e1e7dc;
+      border-radius: 8px;
+      padding: 18px;
+      min-height: 112px;
+      background: #fbfcfa;
+    }
+    .tile strong {
+      display: block;
+      margin-bottom: 8px;
+      color: #22352a;
+    }
+    .tile span {
+      color: #617067;
+      line-height: 1.55;
+    }
+    footer {
+      padding: 18px 44px 30px;
+      color: #6c766f;
+      font-size: 14px;
+    }
+    @media (max-width: 720px) {
+      body { padding: 18px; }
+      header, section, footer { padding-left: 24px; padding-right: 24px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>CPW-RDMS</h1>
+      <p class="tagline">柑橘皮渣研发数据管理系统静态测试页，用于验证 GitHub Pages 部署链路。</p>
+    </header>
+    <section>
+      <div class="status"><span class="dot" aria-hidden="true"></span>静态页面已提交，等待 Pages 发布</div>
+      <div class="grid">
+        <div class="tile"><strong>阶段一</strong><span>先完成 docs 静态页上线，验证域名、仓库和发布流程。</span></div>
+        <div class="tile"><strong>阶段二</strong><span>接入后端 API、数据库和研发样品记录模型。</span></div>
+        <div class="tile"><strong>阶段三</strong><span>扩展 LLM 接口，支持配方、批次、成本和报告辅助分析。</span></div>
+      </div>
+    </section>
+    <footer>Repository: xwtylife-gif/cpw-rdms</footer>
+  </main>
+</body>
+</html>
